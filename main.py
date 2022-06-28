@@ -2,9 +2,10 @@ import datetime as dt
 import pandas as pd
 import random
 import smtplib
+import os
 
 EMAIL = "haruna99.test@yahoo.com"
-PASSWORD = "qasypgytpyupysaq"
+PASSWORD = os.environ.get("PASSWORD")
 
 now = dt.datetime.now()
 month = now.month
